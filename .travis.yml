@@ -1,7 +1,9 @@
 language: node_js
 node_js:
   - 13.0.1
-cache: yarn
+cache:
+  directories:
+    - node_modules
 
 install:
   - yarn
@@ -17,3 +19,6 @@ deploy:
   local_dir: build
   on:
     branch: master
+
+after_success:
+  - yarn semantic-release

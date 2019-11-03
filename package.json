@@ -1,8 +1,12 @@
 {
   "name": "cra-ghpages",
-  "version": "0.1.0",
+  "version": "0.0.0-semantically-released",
   "private": true,
   "homepage": "https://carltonj2000.github.io/cra-ghpages/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carltonj2000/cra-ghpages"
+  },
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -13,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "semanticr": "semantic-release pre && npm publish && semantic-release post"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,6 +36,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "2.1.1"
+    "gh-pages": "2.1.1",
+    "semantic-release": "15.13.30"
   }
 }

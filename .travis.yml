@@ -21,4 +21,4 @@ deploy:
     branch: master
 
 after_success:
-  - yarn semantic-release
+  - yarn semanticr

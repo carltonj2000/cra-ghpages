@@ -13,12 +13,17 @@ script:
   - yarn build
 
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local_dir: build
-  on:
-    branch: master
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    local_dir: build
+    on:
+      branch: master
+  - provider: npm
+    email: "carlton.joseph@gmail.com"
+    api_key: $NPM_TOKEN
+    on:
+      tags: true
 
 after_success:
   - yarn semanticr

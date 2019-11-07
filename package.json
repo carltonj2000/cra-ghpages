@@ -1,6 +1,6 @@
 {
   "name": "cra-ghpages",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.1",
   "private": true,
   "homepage": "https://carltonj2000.github.io/cra-ghpages/",
   "repository": {
@@ -18,7 +18,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
-    "semanticr": "semantic-release pre && npm publish && semantic-release post"
+    "semanticr": "echo \"if tagged will publish\"",
+    "semanticr:old": "semantic-release pre && npm publish && semantic-release post"
   },
   "eslintConfig": {
     "extends": "react-app"

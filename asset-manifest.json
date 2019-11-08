@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/cra-ghpages/static/js/main.c3d58832.chunk.js",
+    "main.js.map": "/cra-ghpages/static/js/main.c3d58832.chunk.js.map",
+    "runtime-main.js": "/cra-ghpages/static/js/runtime-main.ee6a1313.js",
+    "runtime-main.js.map": "/cra-ghpages/static/js/runtime-main.ee6a1313.js.map",
+    "static/js/2.513818df.chunk.js": "/cra-ghpages/static/js/2.513818df.chunk.js",
+    "static/js/2.513818df.chunk.js.map": "/cra-ghpages/static/js/2.513818df.chunk.js.map",
+    "index.html": "/cra-ghpages/index.html",
+    "precache-manifest.321c26d5fdd79b73f3ceceebe060e566.js": "/cra-ghpages/precache-manifest.321c26d5fdd79b73f3ceceebe060e566.js",
+    "service-worker.js": "/cra-ghpages/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee6a1313.js",
+    "static/js/2.513818df.chunk.js",
+    "static/js/main.c3d58832.chunk.js"
+  ]
+}

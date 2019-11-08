@@ -1,7 +1,7 @@
 {
-  "name": "cra-ghpages",
+  "name": "@carltonj2000/cra-ghpages",
   "version": "0.0.2",
-  "private": true,
+  "license": "MIT",
   "homepage": "https://carltonj2000.github.io/cra-ghpages/",
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
     "commitz": "git-cz",
-    "semanticr": "semantic-release pre && npm publish && semantic-release post"
+    "semanticr": "semantic-release"
   },
   "eslintConfig": {
     "extends": "react-app"

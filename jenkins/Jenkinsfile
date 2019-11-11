@@ -1,0 +1,33 @@
+pipeline {
+  agent {
+    docker {
+      image 'node:13.1.0-alpine'
+      args '-p 3000:3000'
+    }
+  }
+  environment {
+    CI = 'true'
+  }
+  stages {
+    stage('Install') {
+      steps {
+        sh 'yarn'
+      }
+    }
+    stage('Test') {
+      steps {
+        sh 'yarn test'
+      }
+    }
+    stage('Build') {
+      steps {
+        sh 'yarn build'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        sh 'yarn semanticr'
+      }
+    }
+  }
+}

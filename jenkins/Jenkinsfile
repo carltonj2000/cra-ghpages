@@ -29,6 +29,11 @@ pipeline {
         sh 'yarn build'
       }
     }
+    stage('Gh-Pages') {
+      steps {
+        sh 'yarn gph'
+      }
+    }
     stage('Deploy') {
       steps {
         sh 'yarn semanticr'

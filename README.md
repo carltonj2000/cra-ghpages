@@ -1,7 +1,9 @@
-# CRA Github Page And Travis
+# CRA Github Page And Jenkinsfile
 
 The webpage generate by this application can be seen
 [here](https://carltonj2000.github.io/cra-ghpages/).
+
+Jenkins is used for release procedure.
 
 ## Notes
 

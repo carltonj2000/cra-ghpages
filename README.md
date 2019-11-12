@@ -15,3 +15,5 @@ Jenkins is used for release procedure.
 The code in this repository is based on:
 
 - [How to host your website for free?! - GitHub Pages](https://www.youtube.com/watch?v=GkXOyVnDrG0)
+- [Automating Semantic Versioning for any Project](https://hodgkins.io/automating-semantic-versioning)
+- [How to control your deployments and versioning with semantic-release & friends](https://blog.logrocket.com/never-guess-about-project-history-again-31f65091f668/)

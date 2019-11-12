@@ -29,13 +29,13 @@ pipeline {
         sh 'yarn build'
       }
     }
-//    stage('Gh-Pages') {
-//      steps {
-//        sh 'git config --global user.email "carlton.joseph@gmail.com"'
-//        sh 'git config --global user.name "Carlton Joseph"'
-//        sh 'yarn gph'
-//      }
-//    }
+    stage('Gh-Pages') {
+      steps {
+        sh 'git config --global user.email "carlton.joseph@gmail.com"'
+        sh 'git config --global user.name "Carlton Joseph"'
+        sh 'yarn gph'
+      }
+    }
     stage('Deploy') {
       steps {
         sh 'yarn semanticr'

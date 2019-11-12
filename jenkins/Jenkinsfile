@@ -9,6 +9,9 @@ pipeline {
     CI = 'true'
     GIT_BRANCH = 'master'
     GITHUB_TOKEN = credentials('GITHUB_TOKEN')
+    NPM_TOKEN = credentials('NPM_TOKEN')
+    NPM_EMAIL = credentials('NPM_EMAIL')
+    NPM_USERNAME = credentials('NPM_USERNAME')
   }
   stages {
     stage('Install') {

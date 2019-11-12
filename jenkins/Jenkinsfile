@@ -8,6 +8,7 @@ pipeline {
   environment {
     CI = 'true'
     GIT_BRANCH = 'master'
+    GITHUB_TOKEN = credentials('GITHUB_TOKEN')
   }
   stages {
     stage('Install') {

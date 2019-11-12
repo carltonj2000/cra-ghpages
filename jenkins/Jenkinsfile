@@ -30,7 +30,7 @@ pipeline {
         sh 'yarn build'
       }
     }
-    stage('Gh-Pages') {
+/*    stage('Gh-Pages') {
       steps {
         sh "apt upgrade -y git"
         sh "git config --global user.email \"${NPM_EMAIL}\""
@@ -38,7 +38,7 @@ pipeline {
         sh "git --version"
         sh 'yarn gph'
       }
-    }
+    } */
     stage('Deploy') {
       steps {
         sh 'yarn semanticr'

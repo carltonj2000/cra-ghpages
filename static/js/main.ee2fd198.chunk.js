@@ -1,0 +1,2 @@
+(this["webpackJsonpcra-ghpages"]=this["webpackJsonpcra-ghpages"]||[]).push([[0],{3:function(e,t,a){e.exports=a(8)},8:function(e,t,a){"use strict";a.r(t);var n=a(0),r=a.n(n),p=a(2);var c=function(){return r.a.createElement("div",{className:"App"},"Create react app, to github page, and deploying with travis.")};a.n(p).a.render(r.a.createElement(c,null),document.getElementById("root"))}},[[3,1,2]]]);
+//# sourceMappingURL=main.ee2fd198.chunk.js.map

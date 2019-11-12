@@ -32,6 +32,7 @@ pipeline {
     }
     stage('Gh-Pages') {
       steps {
+        sh "apt update -y git"
         sh "git config --global user.email \"${NPM_EMAIL}\""
         sh "git config --global user.name \"${USERNAME}\""
         sh "git --version"

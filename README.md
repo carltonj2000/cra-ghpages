@@ -9,6 +9,7 @@ Jenkins is used for release procedure.
 
 - use `docker exec -it lucid_lumiere bash` to login into the running jenkins
   instance and replace luchid_lumiere with the docker container name
+- enter environment variables in Jenkins Credentials text page
 
 ## History
 

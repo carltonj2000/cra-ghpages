@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "gph": "gh-pages -d build",
+    "gph": "gh-pages -d build -r https://github.com/carltonj2000/cra-ghpages",
     "commitz": "git-cz",
     "semanticr": "semantic-release"
   },

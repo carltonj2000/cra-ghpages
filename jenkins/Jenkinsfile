@@ -10,8 +10,9 @@ pipeline {
     GIT_BRANCH = 'master'
     GITHUB_TOKEN = credentials('GITHUB_TOKEN')
     NPM_TOKEN = credentials('NPM_TOKEN')
-    NPM_EMAIL = credentials('NPM_EMAIL')
-    NPM_USERNAME = credentials('NPM_USERNAME')
+    NPM_EMAIL = 'carlton.joseph@gmai.com'
+    NPM_USERNAME = 'carltonj2000'
+    USERNAME = 'Carlton Joseph'
   }
   stages {
     stage('Install') {
@@ -31,8 +32,8 @@ pipeline {
     }
     stage('Gh-Pages') {
       steps {
-        sh 'git config --global user.email "carlton.joseph@gmail.com"'
-        sh 'git config --global user.name "Cartlton Joseph"'
+        sh "git config --global user.email \"${NPM_EMAIL}\""
+        sh "git config --global user.name \"${USERNAME}\""
         echo "npm email ${NPM_EMAIL}"
         sh 'yarn gph'
       }

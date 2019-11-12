@@ -34,7 +34,6 @@ pipeline {
       steps {
         sh "git config --global user.email \"${NPM_EMAIL}\""
         sh "git config --global user.name \"${USERNAME}\""
-        echo "npm email ${NPM_EMAIL}"
         sh 'yarn gph'
       }
     }

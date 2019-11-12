@@ -32,7 +32,7 @@ pipeline {
     stage('Gh-Pages') {
       steps {
         sh 'git config --global user.email "carlton.joseph@gmail.com"'
-        sh 'git config --global user.name "carltonj2000"'
+        sh 'git config --global user.name "Cartlton Joseph"'
         sh 'yarn gph'
       }
     }
